@@ -24,9 +24,6 @@ namespace HostedServiceSynchronization.ModuleEnricher
             logger.LogInformation($"{GetType().Name}================ SESSION IS READY =============");
         }
 
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            throw new System.NotImplementedException();
-        }
+        public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
     }
 }
